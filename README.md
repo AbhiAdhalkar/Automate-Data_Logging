@@ -1,4 +1,4 @@
-# OPC Tag Monitor & Writer
+# OPC Tag Monitor/Writer & Automate Data Logging
 
 Task 1 (Screen 1): Automated Tag Monitoring & Logging
 -  tags are fetched from MXOPC DA using a C# API and exposed to the frontend built with React (Vite).
