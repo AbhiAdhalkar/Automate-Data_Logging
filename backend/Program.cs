@@ -20,6 +20,7 @@ builder.Services.AddScoped<ManualLogService>();
 //builder.Services.AddHostedService<OpcAutoLoggingService>();
 builder.Services.AddScoped<Page2TriggerLoggingService>();
 builder.Services.AddHostedService<Page2TriggerMonitorService>();
+builder.Services.AddHostedService<OpcAutoLoggingService>();
 
 var page2Tags = new[]
 {
