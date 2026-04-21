@@ -1,0 +1,12 @@
+{
+  "MachineName": "",
+  "ServerName": "Mitsubishi.MXOPC.7",
+  "UpdateRate": 200,
+  "Tags": [
+    "ML_MTB_Andon.ShiftTimeSetting.Test.FromHR",
+    "ML_MTB_Andon.ShiftTimeSetting.Test.FromSEC",
+    "ML_MTB_Andon.ShiftTimeSetting.Test.FromMIN",
+    "ML_MTB_Andon.ShiftTimeSetting.Test.WORKING_TIME",
+    "ML_MTB_Andon.ShiftTimeSetting.Test.PLAN_A"
+  ]
+}
