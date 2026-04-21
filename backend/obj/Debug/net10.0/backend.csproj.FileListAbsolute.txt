@@ -95,3 +95,4 @@ D:\Abhishek\dotnet-sql-manual\backend\obj\Debug\net10.0\refint\backend.dll
 D:\Abhishek\dotnet-sql-manual\backend\obj\Debug\net10.0\backend.pdb
 D:\Abhishek\dotnet-sql-manual\backend\obj\Debug\net10.0\backend.genruntimeconfig.cache
 D:\Abhishek\dotnet-sql-manual\backend\obj\Debug\net10.0\ref\backend.dll
+D:\Abhishek\dotnet-sql-manual\backend\obj\Debug\net10.0\backend.sourcelink.json
