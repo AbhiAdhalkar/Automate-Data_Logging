@@ -17,7 +17,7 @@ builder.Services.AddCors(options =>
 builder.Services.AddSingleton<OpcStore>();
 builder.Services.AddSingleton<OpcRuntimeService>();
 builder.Services.AddScoped<ManualLogService>();
-builder.Services.AddHostedService<OpcAutoLoggingService>();
+//builder.Services.AddHostedService<OpcAutoLoggingService>();
 builder.Services.AddScoped<Page2TriggerLoggingService>();
 builder.Services.AddHostedService<Page2TriggerMonitorService>();
 
@@ -327,34 +327,6 @@ app.MapGet("/api/page2/trigger-status", (OpcRuntimeService opc) =>
     catch (Exception ex)
     {
         return Results.Problem(ex.Message);
-    }
-});
-
-
-
-app.MapGet("/api/opc/test-item", (string tagName, OpcRuntimeService opc) =>
-{
-    try
-    {
-        using var client = new EasyDAClient();
-        var vtq = client.ReadItem(opc.MachineName, opc.ServerName, tagName);
-
-        return Results.Ok(new
-        {
-            success = true,
-            tagName,
-            value = vtq.Value?.ToString(),
-            quality = vtq.Quality?.ToString()
-        });
-    }
-    catch (Exception ex)
-    {
-        return Results.BadRequest(new
-        {
-            success = false,
-            tagName,
-            error = ex.Message
-        });
     }
 });
 
